@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "fa660ad1-7740-405a-a464-425ebd27db95",
+		"name": "TMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37723613"
+	},
+	"item": [
+		{
+			"name": "http://tms.local/api/logout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer cMfmsDo6pGZ89UinqfmJxXdVYVg2LStb7EKtiWY5c5cecc98",
+						"type": "text"
+					}
+				],
+				"url": "http://tms.local/api/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "http://tms.local/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://tms.local/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://tms.local/api/translations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|eWfKCvAhl35tzN6A6gRffNxT93O0FOc5x3IlJRYx0b5979dd",
+						"type": "text"
+					}
+				],
+				"url": "http://tms.local/api/translations"
+			},
+			"response": []
+		},
+		{
+			"name": "http://tms.local/api/translations/100001",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|JGgzvZmUaFm8K0ZD4TszxXeXzcvxEafA6Y6Sd3Ac901682ae",
+						"type": "text"
+					}
+				],
+				"url": "http://tms.local/api/translations/100001"
+			},
+			"response": []
+		},
+		{
+			"name": "http://tms.local/api/translations/100001?locale=l&key=keyy&content=cont&context=web",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|JGgzvZmUaFm8K0ZD4TszxXeXzcvxEafA6Y6Sd3Ac901682ae",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "locale",
+							"value": "locale",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "key",
+							"value": "keyy",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "content",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "context",
+							"value": "mobile",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tms.local/api/translations/100001?locale=l&key=keyy&content=cont&context=web",
+					"protocol": "http",
+					"host": [
+						"tms",
+						"local"
+					],
+					"path": [
+						"api",
+						"translations",
+						"100001"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": "l"
+						},
+						{
+							"key": "key",
+							"value": "keyy"
+						},
+						{
+							"key": "content",
+							"value": "cont"
+						},
+						{
+							"key": "context",
+							"value": "web"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://tms.local/api/translations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|JGgzvZmUaFm8K0ZD4TszxXeXzcvxEafA6Y6Sd3Ac901682ae",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "locale",
+							"value": "locale",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "key",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "content",
+							"type": "text"
+						},
+						{
+							"key": "context",
+							"value": "mobile",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://tms.local/api/translations"
+			},
+			"response": []
+		}
+	]
+}
