@@ -12,6 +12,7 @@
     docker exec -it translation-app php artisan migrate --seed
 - Generate application key:
     docker exec -it translation-app php artisan key:generate
+- Copy .env.example to .env and configure database credentials.
 - The application should now be running at http://localhost:8000.
 
 ### Manual Setup (Without Docker)
